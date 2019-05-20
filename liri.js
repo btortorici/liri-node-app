@@ -12,7 +12,7 @@ URL:https://accounts.spotify.com/authorize?client_id=af2c6c6526734faca44623cac18
 
 
 require("dotenv").config();
-var keys = require(Client ID = "af2c6c6526734faca44623cac182f1a0" + Client Secret = "746b2782f2cd48d397662cb1c945dbd7")
+var keys = require("af2c6c6526734faca44623cac182f1a0" + "746b2782f2cd48d397662cb1c945dbd7")
 var request = require("request")
 var Spotify = require("node-spotify-api")
 

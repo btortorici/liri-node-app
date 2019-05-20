@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nicholettesams/liri-node-app.git"
+    "url": "git+https://github.com/btortorici/liri-node-app.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nicholettesams/liri-node-app/issues"
+    "url": "https://github.com/btortorici/liri-node-app/issues"
   },
-  "homepage": "https://github.com/nicholettesams/liri-node-app#readme",
+  "homepage": "https://github.com/btortorici/liri-node-app#readme",
   "dependencies": {
     "dateformat": "^3.0.3",
     "dotenv": "^6.0.0",
