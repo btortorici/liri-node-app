@@ -12,7 +12,7 @@ URL:https://accounts.spotify.com/authorize?client_id=af2c6c6526734faca44623cac18
 
 
 require("dotenv").config();
-var keys = require("af2c6c6526734faca44623cac182f1a0" + "746b2782f2cd48d397662cb1c945dbd7")
+var keys = require('./keys.js')
 var request = require("request")
 var Spotify = require("node-spotify-api")
 
@@ -91,11 +91,11 @@ var movieThis = function (movie) {
             // Need to return: Title, Year, IMDB Rating, Rotten Tomatoes Rating, Country, 
             // Language, Plot, Actors
             var movieInfo = JSON.parse(body)
-
+           
             outputData("Title: " + movieInfo.Title)
             outputData("Release year: " + movieInfo.Year)
             outputData("IMDB Rating: " + movieInfo.imdbRating)
-            outputData("Rotten Tomatoes Rating: " + movieInfo.Ratings[1].Value)
+            outputData("Rotten Tomatoes Rating: " + movieInfo.Ratings[0].Value)
             outputData("Country: " + movieInfo.Country)
             outputData("Language: " + movieInfo.Language)
             outputData("Plot: " + movieInfo.Plot)
@@ -137,7 +137,7 @@ var runAction = function (func, parm) {
         case "concert-this":
             concertThis(parm)
             break
-        case "spotify-this-song":
+        case "spotify-this":
             spotifyThisSong(parm)
             break
         case "movie-this":
